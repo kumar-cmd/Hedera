@@ -1,0 +1,17 @@
+{
+    "name": "Hedera Development",
+    "build": {
+        "context": "../hello-hedera-js-sdk",
+        "dockerfile": "../hello-hedera-js-sdk/Dockerfile"
+    },
+    "postCreateCommand": "npm install",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "forwardPorts": [3000],
+    "remoteUser": "node"
+}
